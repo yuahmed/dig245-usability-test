@@ -1,2 +1,57 @@
-
 /* css */
+
+.headdiv{
+    border-top: solid 0.1rem black ;
+    position: relative;
+    top: 207px; 
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+button{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#bgcol{
+    background-color: #C1BDB3;
+}
+
+.headline{
+    margin-top: 15%;
+}
+
+.contentheader{
+    margin-top: 17%;
+}
+
+.contenttext{
+    margin-top: 3rem;
+    font-size:large;
+}
+
+.mediacol{
+    margin-top: 30%;
+}
+
+.report, .time{
+    margin-top: 2rem;
+}
+.recs{
+    margin-top: 3rem;
+}
+
+#uparrow{
+    position: fixed;
+    margin-top: 0.5rem;
+}
+
+#downarrow{
+    margin-top: 40rem;
+}
+
+#task1, #task1img, #task2, #task3, #task4, #task5{
+    display: none;
+}
