@@ -1,79 +1,125 @@
 /* javascript */
-// const pageContainer = document.getElementsByClassName("container");
+
 const upArrow = document.getElementById("uparrow");
 const downArrow = document.getElementById("downarrow");
 let bg = document.getElementById("bgcol");
-
-// getting all content relevant tags
-let intro = document.getElementById("intro");
-let introImg = document.getElementById("introimg"); 
-//T1
-let t1 = document.getElementById("task1");
-let t1Img = document.getElementById("task1img"); 
-
-// //T2
-// let t2 = document.getElementById("task2");
-// //let t2Img = document.getElementById("task2img"); 
-// //T3
-// let t3 = document.getElementById("task3");
-// //let t2Img = document.getElementById("task2img"); 
-// //T4
-// let t4 = document.getElementById("task4");
-// //let t2Img = document.getElementById("task2img"); 
-// //T5
-// let t5 = document.getElementById("task5");
-// //let t2Img = document.getElementById("task2img"); 
-
-upArrow.style.display ='none'; //bc initially website opens to intro
 let index = 0;
+let colors = {
+  coltask0: "#C1BDB3",
+  coltask1: "#9E6240",
+  coltask2: "#9F6BA0",
+  coltask3: "#1D9281",
+  coltask4: "#D77060",
+  coltask5: "#247BA0",
+  coltask6: "#EAD2AC",
+};
 
-upArrow.addEventListener("click", () => newPage('up'));
-downArrow.addEventListener("click", () => newPage('down'));
+upArrow.style.display = "none"; //bc initially website opens to intro
 
-function newPage (direction) {
+upArrow.addEventListener("click", () => newPage("up"));
+downArrow.addEventListener("click", () => newPage("down"));
 
-    //EDGE CASES:
-    //1. intro (no up arrow)
-    //2. p2 to intro (show hide up arrow)
-    //3. SUS (no down arrow)
-    //4. p6 to SUS (show hide down arrow)
-   
-    //at this point, up arrow will not be shown
-    if (index == 0){
-        index++; 
-        if (direction == 'down'){
-            //hiding previous page
-            intro.style.display='none';
-            introImg.style.display ='none';
-    
-            //showing new page
-            bg.style.backgroundColor = '#9E6240'
-            t1.style.display = 'block';
-            t1Img.style.display = 'block';
-            upArrow.style.display = 'block';
-        }
+function newPage(direction) {
+  //EDGE CASES:
+  //1. intro (no up arrow)
+  //2. p2 to intro (show/hide up arrow)
+  //3. SUS (no down arrow)
+  //4. SUS to p6 (show/hide down arrow)
+
+  if (index >= 0 && index <= 6) {
+    if (direction == "up") {
+      let oldpageId = `task${index}`;
+      index--;
+      let newpageId = `task${index}`;
+
+      // Get the old page and old page image elements
+      let oldpage = document.getElementById(oldpageId);
+      let oldpageImg = document.getElementById(`${oldpageId}img`);
+      // Get the new page and new page image elements
+      let newpage = document.getElementById(newpageId);
+      let newpageImg = document.getElementById(`${newpageId}img`);
+
+      //hiding new page
+      oldpage.style.display = "none";
+      oldpageImg.style.display = "none";
+
+      downArrow.style.display = "block";
+      //showing previous page
+      bg.style.backgroundColor = colors[`col${newpageId}`];
+      newpage.style.display = "block";
+      newpageImg.style.display = "block";
+
+      if (index == 0) {         //after index decreased
+        //went from t1 to intro(t0)
+        upArrow.style.display = "none";
+      }
     }
 
-    // going from page 1 to intro
-    if (index == 1) {
-        if (direction == 'up'){
-            index--;
-            //showing previous page
-            bg.style.backgroundColor = '#C1BDB3';
-            intro.style.display='block';
-            introImg.style.display ='block';
-            
-            upArrow.style.display = 'none';
+    if (direction == "down") {
+      let oldpageId = `task${index}`;
+      index++;
+      let newpageId = `task${index}`;
 
-            //hiding new page
-            t1.style.display = 'none';
-            t1Img.style.display = 'none';
-        }
+      // Get the old page and old page image elements
+      let oldpage = document.getElementById(oldpageId);
+      let oldpageImg = document.getElementById(`${oldpageId}img`);
+      // Get the new page and new page image elements
+      let newpage = document.getElementById(newpageId);
+      let newpageImg = document.getElementById(`${newpageId}img`);
+
+      //hiding old page
+      oldpage.style.display = "none";
+      oldpageImg.style.display = "none";
+
+      upArrow.style.display = "block";
+      //showing new page
+      bg.style.backgroundColor = colors[`col${newpageId}`];
+      newpage.style.display = "block";
+      newpageImg.style.display = "block";
+
+      if (index == 6) {        //after index increased
+        //went from t5 to SUS(t6)
+        downArrow.style.display = "none";
+      }
     }
-
-    // //at this point, down arrow will not be shown
-    // if (index == 6) {
-        
-    // }
-
+  }
 }
+
+let SUSForm = document.getElementById("task6");
+
+SUSForm.addEventListener("submit", (event) => {
+  // prevent default behavior of form
+  //event.preventDefault();
+
+  // create variables for all items
+  let q1 = this.q1.value;
+  let q2 = this.q2.value;
+  let q3 = this.q3.value;
+  let q4 = this.q4.value;
+  let q5 = this.q5.value;
+  let q6 = this.q6.value;
+  let q7 = this.q7.value;
+  let q8 = this.q8.value;
+  let q9 = this.q9.value;
+  let q10 = this.q10.value;
+
+  // For odd items: subtract one from the user response.
+  q1 -= 1;
+  q3 -= 1;
+  q5 -= 1;
+  q7 -= 1;
+  q9 -= 1;
+
+  // For even-numbered items: subtract the user responses from 5
+  q2 = 5 - q2;
+  q4 = 5 - q4;
+  q6 = 5 - q6;
+  q8 = 5 - q8;
+  q10 = 5 - q10;
+
+  // Add all converted responses; multiply that total by 2.5.
+  let answer = (q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 + q10) * 2.5;
+
+  // store in a new input
+  this.answer.value = answer;
+});

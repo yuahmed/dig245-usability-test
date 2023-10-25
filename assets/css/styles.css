@@ -1,11 +1,5 @@
 /* css */
 
-.headdiv{
-    border-top: solid 0.1rem black ;
-    position: relative;
-    top: 207px; 
-}
-
 body {
   font-family: "DM Sans", sans-serif;
 }
@@ -13,6 +7,13 @@ body {
 button{
     background-color: transparent;
     border-color: transparent;
+
+}
+
+input, label{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 0;
 }
 
 #bgcol{
@@ -52,6 +53,13 @@ button{
     margin-top: 40rem;
 }
 
-#task1, #task1img, #task2, #task3, #task4, #task5{
+#task1, #task2, #task3, #task4, #task5, #task6{
     display: none;
+}
+#task1img, #task2img, #task3img, #task4img, #task5img, #task6img{
+    display: none;
+}
+
+.SUS-btn{
+    background-color: grey;
 }
