@@ -19,29 +19,59 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body id="bgcol">
-    <!-- visible content goes here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="headline" id="task0head">
+            <h1 style="color: white">
+              A Usability Test Study for
+              <br />
+              <a href="https://apple.com" target="_blank" style="color: black"
+                >Apple.com</a
+              >
+            </h1>
+          </div>
+
+          <div class="headline" id="task1head">
+            <h1>Task 1: Find and Compare Macbook Options.</h1>
+          </div>
+
+          <div class="headline" id="task2head">
+            <h1>Task 2: Find the Nearest Store.</h1>
+          </div>
+
+          <div class="headline" id="task3head">
+            <h1>Task 3: Sign Up for an Apple Credit Card.</h1>
+          </div>
+
+          <div class="headline" id="task4head">
+            <h1>Task 4: Look for Repair Options.</h1>
+          </div>
+
+          <div class="headline" id="task5head">
+            <h1>Task 5: Purchase an AirTag.</h1>
+          </div>
+
+          <div class="headline" id="task6head">
+            <h1>System Usability Scale (SUS)</h1>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-1 col-lg-1 order-first order-md-last order-lg-last"
+        >
+          <button type="button" id="uparrow">
+            <img src="assets\img\arrowup.svg" />
+          </button>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
-      <!-- TO REMOVE  -->
-
-      <!-- <div class="row">
-        <div class="headdiv">
-      </div> -->
-
-      <div class="row" id="mgrow">
+      <div class="row">
         <!-- LEFT COLUMN  -->
-        <div class="col-12 col-md-6 col-lg-6 leftcol">
+        <div class="col-12 col-md-6 col-lg-6">
           <!-- INTRO -->
           <div id="task0">
-            <div class="headline" id="headline">
-              <h1 style="color: white">
-                A Usability Test Study for
-                <br />
-                <a href="https://apple.com" target="_blank" style="color: black"
-                  >Apple.com</a
-                >
-              </h1>
-            </div>
             <div class="contentheader">
               <h3>What is a Usability Test?</h3>
             </div>
@@ -62,9 +92,6 @@
 
           <!-- TASK 1 -->
           <div id="task1">
-            <div class="headline" id="headline">
-              <h1>Task 1: Find and Compare Macbook Options.</h1>
-            </div>
             <div class="contenttext">
               <p class="time">
                 <span>
@@ -94,9 +121,6 @@
 
           <!-- TASK 2 -->
           <div id="task2">
-            <div class="headline" id="headline">
-              <h1>Task 2: Find the Nearest Store.</h1>
-            </div>
             <div class="contenttext">
               <p class="time">
                 <span>
@@ -117,9 +141,6 @@
 
           <!-- TASK3 -->
           <div id="task3">
-            <div class="headline" id="headline">
-              <h1>Task 3: Sign Up for an Apple Credit Card.</h1>
-            </div>
             <div class="contenttext">
               <p class="time">
                 <span>
@@ -149,9 +170,6 @@
 
           <!-- TASK 4  -->
           <div id="task4">
-            <div class="headline" id="headline">
-              <h1>Task 4: Look for Repair Options.</h1>
-            </div>
             <div class="contenttext">
               <p class="time">
                 <span>
@@ -180,9 +198,6 @@
 
           <!-- TASK 5 -->
           <div id="task5">
-            <div class="headline" id="headline">
-              <h1>Task 5: Purchase an AirTag.</h1>
-            </div>
             <div class="contenttext">
               <p class="time">
                 <span>
@@ -213,28 +228,36 @@
 
           <!-- SUS Form -->
           <div id="task6">
-            <div class="headline" id="headline">
-              <h1>System Usability Scale (SUS)</h1>
+            <div class="contentheader">
+              <h3>What is the SUS?</h3>
             </div>
             <div class="contenttext">
-              <h3>What is the SUS?</h3> <br> <br>
-              <p>The SUS provides a “quick and dirty”, reliable tool for measuring the usability. <br> <br>
+              <p>
+                The SUS provides a “quick and dirty”, reliable tool for
+                measuring the usability. <br />
+                <br />
 
-                It consists of a 10 item questionnaire with five response options for respondents. <br><br> <br>
-                
-                
-                <strong>Visit <a href="https://apple.com" target="_blank" style="color: black;">apple.com</a> and fill in your response in the form on the right!</strong></p>
+                It consists of a 10 item questionnaire with five response
+                options for respondents. <br /><br />
+                <br />
+
+                <strong
+                  >Visit
+                  <a
+                    href="https://apple.com"
+                    target="_blank"
+                    style="color: black"
+                    >apple.com</a
+                  >
+                  and fill in your response in the form on the right!</strong
+                >
+              </p>
             </div>
           </div>
-
         </div>
 
         <!-- MIDDLE COLUMN -->
-        <div class="col-12 col-md-1 col-lg-1">
-          <!-- to contain up down arrows -->
-          <button type="button" id="uparrow">
-            <img src="assets\img\arrowup.svg" />
-          </button>
+        <div class="col-12 col-md-1 col-lg-1 order-last">
 
           <button type="button" id="downarrow">
             <img src="assets\img\arrowdown.svg" />
@@ -242,30 +265,59 @@
         </div>
 
         <!-- RIGHT COLUMN -->
-        <div class="col-12 col-md-5 col-lg-5">
+        <div
+          class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last"
+        >
           <div class="mediacol">
             <div id="task0img">
-              <img src="assets\img\applelogo.png" />
+              <img src="assets\img\applelogo.png" class="img-fluid" />
             </div>
             <div id="task1img">
-              <img src="assets\img\task1.png" width="450px" height="450px" />
+              <img
+                src="assets\img\task1.png"
+                width="450px"
+                height="450px"
+                class="img-fluid"
+              />
             </div>
             <div id="task2img">
-              <img src="assets\img\task2.png" width="450px" height="450px" />
+              <img
+                src="assets\img\task2.png"
+                width="450px"
+                height="450px"
+                class="img-fluid"
+              />
             </div>
             <div id="task3img">
-              <img src="assets\img\task3.png" width="450px" height="450px" />
+              <img
+                src="assets\img\task3.png"
+                width="450px"
+                height="450px"
+                class="img-fluid"
+              />
             </div>
             <div id="task4img">
-              <img src="assets\img\task4.png" width="450px" height="450px" />
+              <img
+                src="assets\img\task4.png"
+                width="450px"
+                height="450px"
+                class="img-fluid"
+              />
             </div>
             <div id="task5img">
-              <img src="assets\img\task5.png" width="450px" height="450px" />
+              <img
+                src="assets\img\task5.png"
+                width="450px"
+                height="450px"
+                class="img-fluid"
+              />
             </div>
 
             <div id="task6img" class="SUSForm">
               <h3>On a scale of 1 to 5...</h3>
-              <p><em>(where 1 is strongly disagree and 5 is strongly agree)</em></p>
+              <p>
+                <em>(where 1 is strongly disagree and 5 is strongly agree)</em>
+              </p>
               <form action="#" id="SUS-Form">
                 <div class="d-flex justify-content-left">
                   <input

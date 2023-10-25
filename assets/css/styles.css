@@ -21,11 +21,11 @@ input, label{
 }
 
 .headline{
-    margin-top: 15%;
+    margin-top: 5rem;
 }
 
 .contentheader{
-    margin-top: 17%;
+    margin-top: 5rem;
 }
 
 .contenttext{
@@ -34,7 +34,7 @@ input, label{
 }
 
 .mediacol{
-    margin-top: 30%;
+    margin-top: 3rem ;
 }
 
 .report, .time{
@@ -45,12 +45,17 @@ input, label{
 }
 
 #uparrow{
-    position: fixed;
-    margin-top: 0.5rem;
+    position: absolute;
+    margin-top: 2rem;
 }
 
 #downarrow{
-    margin-top: 40rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+#task1head, #task2head, #task3head, #task4head, #task5head, #task6head{
+    display: none;
 }
 
 #task1, #task2, #task3, #task4, #task5, #task6{
