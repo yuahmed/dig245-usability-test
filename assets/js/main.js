@@ -97,7 +97,7 @@ let SUSForm = document.getElementById("task6");
 
 SUSForm.addEventListener("submit", (event) => {
   // prevent default behavior of form
-  //event.preventDefault();
+  event.preventDefault();
 
   // create variables for all items
   let q1 = this.q1.value;
