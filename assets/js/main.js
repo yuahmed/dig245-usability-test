@@ -1,7 +1,7 @@
 /* javascript */
 
-const upArrow = document.getElementById("uparrow");
-const downArrow = document.getElementById("downarrow");
+const upArrow = document.getElementById("upArrow");
+const downArrow = document.getElementById("downArrow");
 let bg = document.getElementById("bgcol");
 let index = 0;
 let colors = {
@@ -11,7 +11,7 @@ let colors = {
   coltask3: "#1D9281",
   coltask4: "#D77060",
   coltask5: "#247BA0",
-  coltask6: "#EAD2AC",
+  coltask6: "#EAD2AC"
 };
 
 upArrow.style.display = "none"; //bc initially website opens to intro
@@ -34,24 +34,24 @@ function newPage(direction) {
 
       // Get the old page and old page image elements
       let oldpage = document.getElementById(oldpageId);
-      let oldHead = document.getElementById(`${oldpageId}head`);
-      let oldpageImg = document.getElementById(`${oldpageId}img`);
+      // let oldHead = document.getElementById(`${oldpageId}head`);
+      // let oldpageImg = document.getElementById(`${oldpageId}img`);
       // Get the new page and new page image elements
       let newpage = document.getElementById(newpageId);
-      let newHead = document.getElementById(`${newpageId}head`);
-      let newpageImg = document.getElementById(`${newpageId}img`);
+      // let newHead = document.getElementById(`${newpageId}head`);
+      // let newpageImg = document.getElementById(`${newpageId}img`);
 
       //hiding old page
       oldpage.style.display = "none";
-      oldHead.style.display="none";
-      oldpageImg.style.display = "none";
+      // oldHead.style.display="none";
+      // oldpageImg.style.display = "none";
 
       downArrow.style.display = "block";
       //showing new/ previous page
       bg.style.backgroundColor = colors[`col${newpageId}`];
       newpage.style.display = "block";
-      newHead.style.display="block";
-      newpageImg.style.display = "block";
+      // newHead.style.display="block";
+      // newpageImg.style.display = "block";
 
       if (index == 0) {         //after index decreased
         //went from t1 to intro(t0)
@@ -66,24 +66,24 @@ function newPage(direction) {
 
       // Get the old page and old page image elements
       let oldpage = document.getElementById(oldpageId);
-      let oldHead = document.getElementById(`${oldpageId}head`);
-      let oldpageImg = document.getElementById(`${oldpageId}img`);
+      // let oldHead = document.getElementById(`${oldpageId}head`);
+      // let oldpageImg = document.getElementById(`${oldpageId}img`);
       // Get the new page and new page image elements
       let newpage = document.getElementById(newpageId);
-      let newHead = document.getElementById(`${newpageId}head`);
-      let newpageImg = document.getElementById(`${newpageId}img`);
+      // let newHead = document.getElementById(`${newpageId}head`);
+      // let newpageImg = document.getElementById(`${newpageId}img`);
 
       //hiding old page
       oldpage.style.display = "none";
-      oldHead.style.display="none";
-      oldpageImg.style.display = "none";
+      // oldHead.style.display="none";
+      // oldpageImg.style.display = "none";
 
       upArrow.style.display = "block";
       //showing new/ next page
       bg.style.backgroundColor = colors[`col${newpageId}`];
       newpage.style.display = "block";
-      newHead.style.display="block";
-      newpageImg.style.display = "block";
+      // newHead.style.display="block";
+      // newpageImg.style.display = "block";
 
       if (index == 6) {        //after index increased
         //went from t5 to SUS(t6)
@@ -93,7 +93,7 @@ function newPage(direction) {
   }
 }
 
-let SUSForm = document.getElementById("task6");
+let SUSForm = document.getElementById("SUSForm");
 
 SUSForm.addEventListener("submit", (event) => {
   // prevent default behavior of form

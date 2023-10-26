@@ -1,75 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- meta tags, links to css, etc. -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DIG 245 Usability Test</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/dm-sans?styles=50586"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body id="bgcol">
-    <div class="container">
+<head>
+  <!-- meta tags, links to css, etc. -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIG 245 Usability Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link href="https://fonts.cdnfonts.com/css/dm-sans?styles=50586" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body id="bgcol">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12">
+        <button type="button" id="upArrow">
+          <img src="assets\img\arrowup.svg" />
+        </button>
+      </div>
+    </div>
+
+    <!-- INTRO  -->
+    <div id="task0">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-6">
+
           <div class="headline" id="task0head">
             <h1 style="color: white">
               A Usability Test Study for
               <br />
-              <a href="https://apple.com" target="_blank" style="color: black"
-                >Apple.com</a
-              >
+              <a href="https://apple.com" target="_blank" style="color: black">Apple.com</a>
             </h1>
           </div>
 
-          <div class="headline" id="task1head">
-            <h1>Task 1: Find and Compare Macbook Options.</h1>
-          </div>
-
-          <div class="headline" id="task2head">
-            <h1>Task 2: Find the Nearest Store.</h1>
-          </div>
-
-          <div class="headline" id="task3head">
-            <h1>Task 3: Sign Up for an Apple Credit Card.</h1>
-          </div>
-
-          <div class="headline" id="task4head">
-            <h1>Task 4: Look for Repair Options.</h1>
-          </div>
-
-          <div class="headline" id="task5head">
-            <h1>Task 5: Purchase an AirTag.</h1>
-          </div>
-
-          <div class="headline" id="task6head">
-            <h1>System Usability Scale (SUS)</h1>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-1 col-lg-1 order-first order-md-last order-lg-last"
-        >
-          <button type="button" id="uparrow">
-            <img src="assets\img\arrowup.svg" />
-          </button>
         </div>
       </div>
-    </div>
-
-    <div class="container">
       <div class="row">
         <!-- LEFT COLUMN  -->
         <div class="col-12 col-md-6 col-lg-6">
+
           <!-- INTRO -->
           <div id="task0">
             <div class="contentheader">
@@ -89,406 +62,416 @@
               </p>
             </div>
           </div>
-
-          <!-- TASK 1 -->
-          <div id="task1">
-            <div class="contenttext">
-              <p class="time">
-                <span>
-                  <img src="assets\img\clock.svg" />
-                  1m 37s
-                </span>
-              </p>
-              <p class="report">
-                <span>
-                  <img src="assets/img/report.svg" />
-                  The user was able to find a Macbook almost immediately, but
-                  struggled to find the compare functionality. They missed the
-                  compare option when it showed up in the drop down menu when
-                  hovering over the "Mac" option.
-                </span>
-              </p>
-              <p class="recs">
-                <span>
-                  <img src="assets\img\recs.svg" />
-                  The compare option in the menu can be enlarged or highlighted
-                  by using an italic font. Currently, the option is in a smaller
-                  font size.
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <!-- TASK 2 -->
-          <div id="task2">
-            <div class="contenttext">
-              <p class="time">
-                <span>
-                  <img src="assets\img\clock.svg" />
-                  17s
-                </span>
-              </p>
-              <p class="report">
-                <span>
-                  <img src="assets/img/report.svg" />
-                  The user did not struggle with this task. They navigated to
-                  the 'Store' option in the navigation bar and successfully
-                  found the link for finding a store in the drop down menu.
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <!-- TASK3 -->
-          <div id="task3">
-            <div class="contenttext">
-              <p class="time">
-                <span>
-                  <img src="assets\img\clock.svg" />
-                  26.15s
-                </span>
-              </p>
-              <p class="report">
-                <span>
-                  <img src="assets/img/report.svg" />
-                  For this task, the option for a card does not appear at all
-                  under any of the navigation bar options.
-                  <br />
-                  The user quickly realized this. They then made use of the
-                  search bar and searched for 'credit card' to find the page.
-                </span>
-              </p>
-              <p class="recs">
-                <span>
-                  <img src="assets\img\recs.svg" />
-                  The navigation bar can have a 'Apple Card' option explicitly
-                  on the navigation bar.
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <!-- TASK 4  -->
-          <div id="task4">
-            <div class="contenttext">
-              <p class="time">
-                <span>
-                  <img src="assets\img\clock.svg" />
-                  15s
-                </span>
-              </p>
-              <p class="report">
-                <span>
-                  <img src="assets/img/report.svg" />
-                  The user navigated to this page with fair ease by finding the
-                  'Repair' option under 'Support' in the navigation menu.
-                  <br />This took a bit longer since graphics on the website are
-                  slow to load sometimes.
-                </span>
-              </p>
-              <p class="recs">
-                <span>
-                  <img src="assets\img\recs.svg" />
-                  The website could use graphics of a smaller size in order to
-                  ensure efficient loading.
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <!-- TASK 5 -->
-          <div id="task5">
-            <div class="contenttext">
-              <p class="time">
-                <span>
-                  <img src="assets\img\clock.svg" />
-                  15s
-                </span>
-              </p>
-              <p class="report">
-                <span>
-                  <img src="assets/img/report.svg" />
-                  The user eventually gained a better sense of the search bar
-                  and successfully completed this task. <br />
-                  They preferred to search for AirTag options using this method
-                  even though it is listed under the 'Accessories' from the
-                  navigation bar.
-                </span>
-              </p>
-              <p class="recs">
-                <span>
-                  <img src="assets\img\recs.svg" />
-                  The number options should be decreased in the bar and in the
-                  drop down menus that appear after as well. This improves
-                  readability and does not tire out the user.
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <!-- SUS Form -->
-          <div id="task6">
-            <div class="contentheader">
-              <h3>What is the SUS?</h3>
-            </div>
-            <div class="contenttext">
-              <p>
-                The SUS provides a “quick and dirty”, reliable tool for
-                measuring the usability. <br />
-                <br />
-
-                It consists of a 10 item questionnaire with five response
-                options for respondents. <br /><br />
-                <br />
-
-                <strong
-                  >Visit
-                  <a
-                    href="https://apple.com"
-                    target="_blank"
-                    style="color: black"
-                    >apple.com</a
-                  >
-                  and fill in your response in the form on the right!</strong
-                >
-              </p>
-            </div>
-          </div>
         </div>
+        <!-- MID COL  -->
+        <div class="col-12 col-md-1 col-lg-1"></div>
 
-        <!-- MIDDLE COLUMN -->
-        <div class="col-12 col-md-1 col-lg-1 order-last">
+        <!-- RIGHT COL -->
+        <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
 
-          <button type="button" id="downarrow">
-            <img src="assets\img\arrowdown.svg" />
-          </button>
-        </div>
-
-        <!-- RIGHT COLUMN -->
-        <div
-          class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last"
-        >
           <div class="mediacol">
             <div id="task0img">
               <img src="assets\img\applelogo.png" class="img-fluid" />
             </div>
-            <div id="task1img">
-              <img
-                src="assets\img\task1.png"
-                width="450px"
-                height="450px"
-                class="img-fluid"
-              />
-            </div>
-            <div id="task2img">
-              <img
-                src="assets\img\task2.png"
-                width="450px"
-                height="450px"
-                class="img-fluid"
-              />
-            </div>
-            <div id="task3img">
-              <img
-                src="assets\img\task3.png"
-                width="450px"
-                height="450px"
-                class="img-fluid"
-              />
-            </div>
-            <div id="task4img">
-              <img
-                src="assets\img\task4.png"
-                width="450px"
-                height="450px"
-                class="img-fluid"
-              />
-            </div>
-            <div id="task5img">
-              <img
-                src="assets\img\task5.png"
-                width="450px"
-                height="450px"
-                class="img-fluid"
-              />
-            </div>
+          </div>
 
-            <div id="task6img" class="SUSForm">
-              <h3>On a scale of 1 to 5...</h3>
-              <p>
-                <em>(where 1 is strongly disagree and 5 is strongly agree)</em>
-              </p>
-              <form action="#" id="SUS-Form">
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q1"
-                    name="q1"
-                    value="5"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q1"
-                    >I think that I would like to use this system
-                    frequently.</label
-                  ><br />
-                </div>
+        </div>
+      </div>
+    </div>
 
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q2"
-                    name="q2"
-                    value="2"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q2"
-                    >I found the system unnecessarily complex. </label
-                  ><br />
-                </div>
+    <!-- TASK1  -->
+    <div id="task1">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="headline">
+            <h1>Task 1: Find and Compare Macbook Options.</h1>
+          </div>
 
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q3"
-                    name="q3"
-                    value="5"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q3">I thought the system was easy to use. </label
-                  ><br />
-                </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- LEFT COLUMN  -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="contenttext">
+            <p class="time">
+              <span>
+                <img src="assets\img\clock.svg" />
+                1m 37s
+              </span>
+            </p>
+            <p class="report">
+              <span>
+                <img src="assets/img/report.svg" />
+                The user was able to find a Macbook almost immediately, but
+                struggled to find the compare functionality. They missed the
+                compare option when it showed up in the drop down menu when
+                hovering over the "Mac" option.
+              </span>
+            </p>
+            <p class="recs">
+              <span>
+                <img src="assets\img\recs.svg" />
+                The compare option in the menu can be enlarged or highlighted
+                by using an italic font. Currently, the option is in a smaller
+                font size.
+              </span>
+            </p>
+          </div>
 
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q4"
-                    name="q4"
-                    value="1"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q4">
-                    I think that I would need the support of a technical person
-                    to be able to use this system.</label
-                  ><br />
-                </div>
-
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q5"
-                    name="q5"
-                    value="5"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q5"
-                    >I found the various functions in this system were well
-                    integrated. </label
-                  ><br />
-                </div>
-
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q6"
-                    name="q6"
-                    value="2"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q6"
-                    >I thought there was too much inconsistency in this system. </label
-                  ><br />
-                </div>
-
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q7"
-                    name="q7"
-                    value="4"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q7"
-                    >I would imagine that most people would learn to use this
-                    system very quickly.</label
-                  ><br />
-                </div>
-
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q8"
-                    name="q8"
-                    value="1"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q8"
-                    >I found the system very cumbersome to use. </label
-                  ><br />
-                </div>
-
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q9"
-                    name="q9"
-                    value="5"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q9"
-                    >I felt very confident using the system. </label
-                  ><br />
-                </div>
-
-                <div class="d-flex justify-content-left">
-                  <input
-                    type="number"
-                    id="q10"
-                    name="q10"
-                    value="1"
-                    min="1"
-                    max="5"
-                    required
-                  />
-                  <label for="q10"
-                    >I needed to learn a lot of things before I could get going
-                    with this system. </label
-                  ><br />
-                </div>
-
-                <!-- <div class="d-flex justify-content-center"></div> -->
-                <input type="number" step="any" id="answer" />
-                <button type="submit" class="btn SUS-btn">Update Score</button>
-              </form>
+          <!-- MID COL  -->
+          <div class="col-12 col-md-1 col-lg-1"></div>
+          
+          <!-- RIGHT COL -->
+          <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
+            <div class="mediacol">
+              <img src="assets\img\task1.png" width="450px" height="450px" class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- load javascript after the page elements render -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    <!-- TASK2  -->
+    <div id="task2">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+
+          <div class="headline">
+            <h1>Task 2: Find the Nearest Store.</h1>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <!-- LEFT COLUMN  -->
+        <div class="col-12 col-md-6 col-lg-6">
+
+          <div class="contenttext">
+            <p class="time">
+              <span>
+                <img src="assets\img\clock.svg" />
+                17s
+              </span>
+            </p>
+            <p class="report">
+              <span>
+                <img src="assets/img/report.svg" />
+                The user did not struggle with this task. They navigated to
+                the 'Store' option in the navigation bar and successfully
+                found the link for finding a store in the drop down menu.
+              </span>
+            </p>
+          </div>
+
+          <!-- MID COL  -->
+          <div class="col-12 col-md-1 col-lg-1"></div>
+
+          <!-- RIGHT COL -->
+          <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
+            <div class="mediacol">
+              <img src="assets\img\task2.png" width="450px" height="450px" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASK3  -->
+    <div id="task3">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+
+          <div class="headline">
+            <h1>Task 3: Sign Up for an Apple Credit Card.</h1>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <!-- LEFT COLUMN  -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="contenttext">
+            <p class="time">
+              <span>
+                <img src="assets\img\clock.svg" />
+                26.15s
+              </span>
+            </p>
+            <p class="report">
+              <span>
+                <img src="assets/img/report.svg" />
+                For this task, the option for a card does not appear at all
+                under any of the navigation bar options.
+                <br />
+                The user quickly realized this. They then made use of the
+                search bar and searched for 'credit card' to find the page.
+              </span>
+            </p>
+            <p class="recs">
+              <span>
+                <img src="assets\img\recs.svg" />
+                The navigation bar can have a 'Apple Card' option explicitly
+                on the navigation bar.
+              </span>
+            </p>
+          </div>
+          <!-- MID COL  -->
+          <div class="col-12 col-md-1 col-lg-1 order-last">
+            <button type="button" id="downarrow">
+              <img src="assets\img\arrowdown.svg" />
+            </button>
+          </div>
+          <!-- RIGHT COL -->
+          <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
+            <div class="mediacol">
+              <img src="assets\img\task3.png" width="450px" height="450px" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASK4  -->
+    <div id="task4">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+
+          <div class="headline">
+            <h1>Task 4: Look for Repair Options.</h1>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <!-- LEFT COLUMN  -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="contenttext">
+            <p class="time">
+              <span>
+                <img src="assets\img\clock.svg" />
+                15s
+              </span>
+            </p>
+            <p class="report">
+              <span>
+                <img src="assets/img/report.svg" />
+                The user navigated to this page with fair ease by finding the
+                'Repair' option under 'Support' in the navigation menu.
+                <br />This took a bit longer since graphics on the website are
+                slow to load sometimes.
+              </span>
+            </p>
+            <p class="recs">
+              <span>
+                <img src="assets\img\recs.svg" />
+                The website could use graphics of a smaller size in order to
+                ensure efficient loading.
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- MID COL  -->
+        <div class="col-12 col-md-1 col-lg-1"></div>
+        <!-- RIGHT COL -->
+        <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
+          <div class="mediacol">
+            <img src="assets\img\task4.png" width="450px" height="450px" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASK5  -->
+    <div id="task5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+
+          <div class="headline">
+            <h1>Task 5: Purchase an AirTag.</h1>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <!-- LEFT COLUMN  -->
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="contenttext">
+            <p class="time">
+              <span>
+                <img src="assets\img\clock.svg" />
+                15s
+              </span>
+            </p>
+            <p class="report">
+              <span>
+                <img src="assets/img/report.svg" />
+                The user eventually gained a better sense of the search bar
+                and successfully completed this task. <br />
+                They preferred to search for AirTag options using this method
+                even though it is listed under the 'Accessories' from the
+                navigation bar.
+              </span>
+            </p>
+            <p class="recs">
+              <span>
+                <img src="assets\img\recs.svg" />
+                The number options should be decreased in the bar and in the
+                drop down menus that appear after as well. This improves
+                readability and does not tire out the user.
+              </span>
+            </p>
+          </div>
+          <!-- MID COL  -->
+          <div class="col-12 col-md-1 col-lg-1"></div>
+          <!-- RIGHT COL -->
+          <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
+            <div class="mediacol">
+              <img src="assets\img\task5.png" width="450px" height="450px" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUS Form  -->
+    <div id="task6">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <div class="headline">
+            <h1>System Usability Scale (SUS)</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- LEFT COLUMN  -->
+        <div class="col-12 col-md-6 col-lg-6">
+
+          <div class="contentheader">
+            <h3>What is the SUS?</h3>
+          </div>
+          <div class="contenttext">
+            <p>
+              The SUS provides a “quick and dirty”, reliable tool for
+              measuring the usability. <br />
+              <br />
+
+              It consists of a 10 item questionnaire with five response
+              options for respondents. <br /><br />
+              <br />
+
+              <strong>Visit
+                <a href="https://apple.com" target="_blank" style="color: black">apple.com</a>
+                and fill in your response in the form on the right!</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MID COL  -->
+      <div class="col-12 col-md-1 col-lg-1"></div>
+
+      <!-- RIGHT COL -->
+      <div class="col-12 col-md-5 col-lg-5 order-first order-md-last order-lg-last">
+        <div class="mediacol">
+          <div id="SUSForm">
+            <h3>On a scale of 1 to 5...</h3>
+            <p>
+              <em>(where 1 is strongly disagree and 5 is strongly agree)</em>
+            </p>
+            <form action="#" id="SUS-Form">
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q1" name="q1" value="5" min="1" max="5" required />
+                <label for="q1">I think that I would like to use this system
+                  frequently.</label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q2" name="q2" value="2" min="1" max="5" required />
+                <label for="q2">I found the system unnecessarily complex. </label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q3" name="q3" value="5" min="1" max="5" required />
+                <label for="q3">I thought the system was easy to use. </label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q4" name="q4" value="1" min="1" max="5" required />
+                <label for="q4">
+                  I think that I would need the support of a technical person
+                  to be able to use this system.</label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q5" name="q5" value="5" min="1" max="5" required />
+                <label for="q5">I found the various functions in this system were well
+                  integrated. </label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q6" name="q6" value="2" min="1" max="5" required />
+                <label for="q6">I thought there was too much inconsistency in this system. </label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q7" name="q7" value="4" min="1" max="5" required />
+                <label for="q7">I would imagine that most people would learn to use this
+                  system very quickly.</label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q8" name="q8" value="1" min="1" max="5" required />
+                <label for="q8">I found the system very cumbersome to use. </label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q9" name="q9" value="5" min="1" max="5" required />
+                <label for="q9">I felt very confident using the system. </label><br />
+              </div>
+
+              <div class="d-flex justify-content-left">
+                <input type="number" id="q10" name="q10" value="1" min="1" max="5" required />
+                <label for="q10">I needed to learn a lot of things before I could get going
+                  with this system. </label><br />
+              </div>
+
+              <!-- <div class="d-flex justify-content-center"></div> -->
+              <input type="number" step="any" id="answer" />
+              <button type="submit" class="btn SUS-btn">Update Score</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <button type="button" id="downArrow">
+          <img src="assets\img\arrowdown.svg" />
+        </button>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+<!-- <div class="col-12 col-md-1 col-lg-1 order-first order-md-last order-lg-last">
+  <button type="button" id="uparrow">
+    <img src="assets\img\arrowup.svg" />
+  </button> -->
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- load javascript after the page elements render -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
 </html>
