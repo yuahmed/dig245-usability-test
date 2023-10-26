@@ -32,26 +32,19 @@ function newPage(direction) {
       index--;
       let newpageId = `task${index}`;
 
-      // Get the old page and old page image elements
+      // Get the new and old pages
       let oldpage = document.getElementById(oldpageId);
-      // let oldHead = document.getElementById(`${oldpageId}head`);
-      // let oldpageImg = document.getElementById(`${oldpageId}img`);
-      // Get the new page and new page image elements
+
       let newpage = document.getElementById(newpageId);
-      // let newHead = document.getElementById(`${newpageId}head`);
-      // let newpageImg = document.getElementById(`${newpageId}img`);
 
       //hiding old page
       oldpage.style.display = "none";
-      // oldHead.style.display="none";
-      // oldpageImg.style.display = "none";
-
+    
       downArrow.style.display = "block";
+
       //showing new/ previous page
       bg.style.backgroundColor = colors[`col${newpageId}`];
       newpage.style.display = "block";
-      // newHead.style.display="block";
-      // newpageImg.style.display = "block";
 
       if (index == 0) {         //after index decreased
         //went from t1 to intro(t0)
@@ -64,26 +57,19 @@ function newPage(direction) {
       index++;
       let newpageId = `task${index}`;
 
-      // Get the old page and old page image elements
+      // Get the new and old pages
       let oldpage = document.getElementById(oldpageId);
-      // let oldHead = document.getElementById(`${oldpageId}head`);
-      // let oldpageImg = document.getElementById(`${oldpageId}img`);
-      // Get the new page and new page image elements
+
       let newpage = document.getElementById(newpageId);
-      // let newHead = document.getElementById(`${newpageId}head`);
-      // let newpageImg = document.getElementById(`${newpageId}img`);
 
       //hiding old page
       oldpage.style.display = "none";
-      // oldHead.style.display="none";
-      // oldpageImg.style.display = "none";
 
       upArrow.style.display = "block";
+
       //showing new/ next page
       bg.style.backgroundColor = colors[`col${newpageId}`];
       newpage.style.display = "block";
-      // newHead.style.display="block";
-      // newpageImg.style.display = "block";
 
       if (index == 6) {        //after index increased
         //went from t5 to SUS(t6)
